@@ -44,6 +44,8 @@ if __name__ == '__main__':
 
     # Overall arguments
     parser.add_argument("--size_block", "-sb", required=False, type=int, nargs=2, help="Size of one block", default=(60,60))
+
+    # Not in use anymore - no functionality
     parser.add_argument("--number_of_blocks", "-b", required=False, type=int, help="Number of blocks", default=1)
     parser.add_argument("--size_pattern", "-sp", required=False, type=int, nargs=2, help="Overall size of pattern", default=(2, 2))
 
