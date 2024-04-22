@@ -1,21 +1,31 @@
-Foundation Row: ch 22
-Row 1: 20 hdc
-Row 2: 3 hdc, 2 ch, 3 hdc, 1 ch, 3 hdc, 1 ch, 3 hdc, 2 ch, 2 hdc
-Row 3: 1 hdc, 5 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 5 ch, 2 hdc
-Row 4: 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc
-Row 5: 2 hdc, 2 ch, 11 hdc, 2 ch, 3 hdc
-Row 6: 3 hdc, 1 ch, 3 hdc, 3 ch, 1 hdc, 3 ch, 3 hdc, 1 ch, 2 hdc
-Row 7: 3 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc
-Row 8: 2 hdc, 1 ch, 3 hdc, 3 ch, 3 hdc, 3 ch, 3 hdc, 1 ch, 1 hdc
-Row 9: 2 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 3 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc
-Row 10: 4 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 3 hdc
-Row 11: 2 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 3 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc
-Row 12: 2 hdc, 1 ch, 3 hdc, 3 ch, 3 hdc, 3 ch, 3 hdc, 1 ch, 1 hdc
-Row 13: 3 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc
-Row 14: 3 hdc, 1 ch, 3 hdc, 3 ch, 1 hdc, 3 ch, 3 hdc, 1 ch, 2 hdc
-Row 15: 2 hdc, 2 ch, 11 hdc, 2 ch, 3 hdc
-Row 16: 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc
-Row 17: 1 hdc, 5 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 5 ch, 2 hdc
-Row 18: 3 hdc, 2 ch, 3 hdc, 1 ch, 3 hdc, 1 ch, 3 hdc, 2 ch, 2 hdc
-Row 19: 3 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc
-Row 20: 20 hdc
+Foundation Row: ch 32
+Row 1: 30 hdc
+Row 2: 2 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 2 hdc, 1 ch, 7 hdc, 1 ch, 2 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc
+Row 3: 2 hdc, 1 ch, 1 hdc, 2 ch, 4 hdc, 4 ch, 1 hdc, 4 ch, 4 hdc, 2 ch, 1 hdc, 1 ch, 3 hdc
+Row 4: 1 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 2 ch, 3 hdc, 2 ch, 1 hdc, 2 ch, 3 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc
+Row 5: 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc, 2 ch, 1 hdc, 1 ch, 2 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc
+Row 6: 1 hdc, 1 ch, 1 hdc, 2 ch, 6 hdc, 2 ch, 5 hdc, 2 ch, 6 hdc, 2 ch, 2 hdc
+Row 7: 4 hdc, 1 ch, 1 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 2 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc
+Row 8: 2 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc, 3 ch, 11 hdc, 3 ch, 1 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc
+Row 9: 3 hdc, 1 ch, 3 hdc, 1 ch, 2 hdc, 4 ch, 1 hdc, 4 ch, 2 hdc, 1 ch, 3 hdc, 1 ch, 4 hdc
+Row 10: 10 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 9 hdc
+Row 11: 1 hdc, 2 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 2 ch, 2 hdc
+Row 12: 3 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 6 ch, 1 hdc, 6 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc
+Row 13: 2 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 2 ch, 3 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc
+Row 14: 3 hdc, 3 ch, 3 hdc, 4 ch, 5 hdc, 4 ch, 3 hdc, 3 ch, 2 hdc
+Row 15: 10 hdc, 1 ch, 3 hdc, 1 ch, 3 hdc, 1 ch, 9 hdc, 1 ch, 1 hdc
+Row 16: 3 hdc, 3 ch, 3 hdc, 4 ch, 5 hdc, 4 ch, 3 hdc, 3 ch, 2 hdc
+Row 17: 2 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 2 ch, 3 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc
+Row 18: 3 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 6 ch, 1 hdc, 6 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc
+Row 19: 1 hdc, 2 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 2 ch, 2 hdc
+Row 20: 10 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 9 hdc
+Row 21: 3 hdc, 1 ch, 3 hdc, 1 ch, 2 hdc, 4 ch, 1 hdc, 4 ch, 2 hdc, 1 ch, 3 hdc, 1 ch, 4 hdc
+Row 22: 2 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc, 3 ch, 11 hdc, 3 ch, 1 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc
+Row 23: 4 hdc, 1 ch, 1 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 2 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc
+Row 24: 1 hdc, 1 ch, 1 hdc, 2 ch, 6 hdc, 2 ch, 5 hdc, 2 ch, 6 hdc, 2 ch, 2 hdc
+Row 25: 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc, 2 ch, 1 hdc, 1 ch, 2 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc
+Row 26: 1 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 2 ch, 3 hdc, 2 ch, 1 hdc, 2 ch, 3 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc
+Row 27: 2 hdc, 1 ch, 1 hdc, 2 ch, 4 hdc, 4 ch, 1 hdc, 4 ch, 4 hdc, 2 ch, 1 hdc, 1 ch, 3 hdc
+Row 28: 2 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 2 hdc, 1 ch, 7 hdc, 1 ch, 2 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc
+Row 29: 3 hdc, 1 ch, 1 hdc, 2 ch, 5 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 1 ch, 5 hdc, 2 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc
+Row 30: 30 hdc

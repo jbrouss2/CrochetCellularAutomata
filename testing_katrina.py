@@ -2,7 +2,7 @@ import cellpylib as cpl
 import numpy as np
 
 # initialize a 60x60 2D cellular automaton
-cellular_automaton = cpl.init_simple2d(18, 18)
+cellular_automaton = cpl.init_simple2d(28, 28)
 
 # evolve the cellular automaton for 30 time steps,
 #  applying totalistic rule 126 to each cell with a Moore neighbourhood

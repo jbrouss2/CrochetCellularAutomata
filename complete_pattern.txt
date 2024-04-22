@@ -1,24 +1,34 @@
 Cellular Automata Crochet Pattern
 Stitch definitions: hdc = half double crochet, ch = chain
 Note: Please note that the ch 2 and turn counts as the first hdc.
-Foundation Row: ch 22.
-Row 1: 20 hdc, ch 2 and turn.
-Row 2: 3 hdc, 2 ch, (3 hdc, 1 ch)*2, 3 hdc, 2 ch, 2 hdc, ch 2 and turn.
-Row 3: 1 hdc, 5 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 5 ch, 2 hdc, ch 2 and turn.
-Row 4: 1 hdc, 3 ch, (1 hdc, 1 ch)*2, (2 hdc, 1 ch)*2, 1 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc, ch 2 and turn.
-Row 5: 2 hdc, 2 ch, 11 hdc, 2 ch, 3 hdc, ch 2 and turn.
-Row 6: 3 hdc, 1 ch, 3 hdc, 3 ch, 1 hdc, 3 ch, 3 hdc, 1 ch, 2 hdc, ch 2 and turn.
-Row 7: 3 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, ch 2 and turn.
-Row 8: 2 hdc, 1 ch, (3 hdc, 3 ch)*2, 3 hdc, 1 ch, 1 hdc, ch 2 and turn.
-Row 9: (2 hdc, 1 ch)*2, 2 hdc, 3 ch, (2 hdc, 1 ch)*2, 1 hdc, 1 ch, 1 hdc, ch 2 and turn.
-Row 10: 4 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 3 hdc, ch 2 and turn.
-Row 11: (2 hdc, 1 ch)*2, 2 hdc, 3 ch, (2 hdc, 1 ch)*2, 1 hdc, 1 ch, 1 hdc, ch 2 and turn.
-Row 12: 2 hdc, 1 ch, (3 hdc, 3 ch)*2, 3 hdc, 1 ch, 1 hdc, ch 2 and turn.
-Row 13: 3 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, ch 2 and turn.
-Row 14: 3 hdc, 1 ch, 3 hdc, 3 ch, 1 hdc, 3 ch, 3 hdc, 1 ch, 2 hdc, ch 2 and turn.
-Row 15: 2 hdc, 2 ch, 11 hdc, 2 ch, 3 hdc, ch 2 and turn.
-Row 16: 1 hdc, 3 ch, (1 hdc, 1 ch)*2, (2 hdc, 1 ch)*2, 1 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc, ch 2 and turn.
-Row 17: 1 hdc, 5 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 5 ch, 2 hdc, ch 2 and turn.
-Row 18: 3 hdc, 2 ch, (3 hdc, 1 ch)*2, 3 hdc, 2 ch, 2 hdc, ch 2 and turn.
-Row 19: 3 hdc, 1 ch, 2 hdc, 1 ch, (1 hdc, 1 ch)*3, (2 hdc, 1 ch)*2, 1 hdc, ch 2 and turn.
-Row 20: 20 hdc, ch 2 and turn.
+Foundation Row: ch 32.
+Row 1: 30 hdc, ch 2 and turn.
+Row 2: 2 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 2 hdc, 1 ch, 7 hdc, 1 ch, 2 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 3: 2 hdc, 1 ch, 1 hdc, 2 ch, 4 hdc, 4 ch, 1 hdc, 4 ch, 4 hdc, 2 ch, 1 hdc, 1 ch, 3 hdc, ch 2 and turn.
+Row 4: 1 hdc, 2 ch, (1 hdc, 1 ch)*2, 1 hdc, 2 ch, 3 hdc, 2 ch, 1 hdc, 2 ch, 3 hdc, 2 ch, (1 hdc, 1 ch)*3, 1 hdc, ch 2 and turn.
+Row 5: 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 2 ch, 2 hdc, 1 ch, (1 hdc, 2 ch)*2, 1 hdc, 1 ch, 2 hdc, 2 ch, (1 hdc, 1 ch)*2, 3 hdc, ch 2 and turn.
+Row 6: 1 hdc, 1 ch, 1 hdc, 2 ch, 6 hdc, 2 ch, 5 hdc, 2 ch, 6 hdc, 2 ch, 2 hdc, ch 2 and turn.
+Row 7: 4 hdc, 1 ch, 1 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 2 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 8: 2 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc, 3 ch, 11 hdc, 3 ch, 1 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 9: (3 hdc, 1 ch)*2, 2 hdc, 4 ch, 1 hdc, 4 ch, 2 hdc, 1 ch, 3 hdc, 1 ch, 4 hdc, ch 2 and turn.
+Row 10: 10 hdc, 1 ch, (1 hdc, 1 ch)*5, 9 hdc, ch 2 and turn.
+Row 11: 1 hdc, 2 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 2 ch, 2 hdc, ch 2 and turn.
+Row 12: 3 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 6 ch, 1 hdc, 6 ch, (2 hdc, 1 ch)*2, 2 hdc, ch 2 and turn.
+Row 13: 2 hdc, 3 ch, (1 hdc, 1 ch)*2, 2 hdc, 2 ch, 3 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 14: 3 hdc, 3 ch, 3 hdc, 4 ch, 5 hdc, 4 ch, 3 hdc, 3 ch, 2 hdc, ch 2 and turn.
+Row 15: 10 hdc, 1 ch, (3 hdc, 1 ch)*2, 9 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 16: 3 hdc, 3 ch, 3 hdc, 4 ch, 5 hdc, 4 ch, 3 hdc, 3 ch, 2 hdc, ch 2 and turn.
+Row 17: 2 hdc, 3 ch, (1 hdc, 1 ch)*2, 2 hdc, 2 ch, 3 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 18: 3 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 6 ch, 1 hdc, 6 ch, (2 hdc, 1 ch)*2, 2 hdc, ch 2 and turn.
+Row 19: 1 hdc, 2 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, 3 ch, 1 hdc, 2 ch, 2 hdc, ch 2 and turn.
+Row 20: 10 hdc, 1 ch, (1 hdc, 1 ch)*5, 9 hdc, ch 2 and turn.
+Row 21: (3 hdc, 1 ch)*2, 2 hdc, 4 ch, 1 hdc, 4 ch, 2 hdc, 1 ch, 3 hdc, 1 ch, 4 hdc, ch 2 and turn.
+Row 22: 2 hdc, 1 ch, 1 hdc, 2 ch, 1 hdc, 3 ch, 11 hdc, 3 ch, 1 hdc, 2 ch, 1 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 23: 4 hdc, 1 ch, 1 hdc, 2 ch, 2 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, 1 ch, 2 hdc, 2 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 24: 1 hdc, 1 ch, 1 hdc, 2 ch, 6 hdc, 2 ch, 5 hdc, 2 ch, 6 hdc, 2 ch, 2 hdc, ch 2 and turn.
+Row 25: 2 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, 2 ch, 2 hdc, 1 ch, (1 hdc, 2 ch)*2, 1 hdc, 1 ch, 2 hdc, 2 ch, (1 hdc, 1 ch)*2, 3 hdc, ch 2 and turn.
+Row 26: 1 hdc, 2 ch, (1 hdc, 1 ch)*2, 1 hdc, 2 ch, 3 hdc, 2 ch, 1 hdc, 2 ch, 3 hdc, 2 ch, (1 hdc, 1 ch)*3, 1 hdc, ch 2 and turn.
+Row 27: 2 hdc, 1 ch, 1 hdc, 2 ch, 4 hdc, 4 ch, 1 hdc, 4 ch, 4 hdc, 2 ch, 1 hdc, 1 ch, 3 hdc, ch 2 and turn.
+Row 28: 2 hdc, 1 ch, 1 hdc, 1 ch, 3 hdc, 1 ch, 2 hdc, 1 ch, 7 hdc, 1 ch, 2 hdc, 1 ch, 3 hdc, 1 ch, 1 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 29: 3 hdc, 1 ch, 1 hdc, 2 ch, 5 hdc, 1 ch, (1 hdc, 1 ch)*2, 5 hdc, 2 ch, 1 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc, ch 2 and turn.
+Row 30: 30 hdc, ch 2 and turn.
