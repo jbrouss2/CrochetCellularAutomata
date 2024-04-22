@@ -168,9 +168,10 @@ with open("complete_pattern.txt", "w") as file:
 
           
 
-#line = "1 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 2 hdc, 1 ch, 1 hdc"
-#new_line = reformat_line(line)
-#print(new_line)
+# changes to make
+# change hdc to dc, and ch 3 instead of ch 2
+# put a newline after each row to make more readable
+
 
 
 
