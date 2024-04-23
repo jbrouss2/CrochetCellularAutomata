@@ -1,0 +1,12 @@
+Foundation Row: ch 13
+Row 1: 11 dc
+Row 2: 3 dc, 5 ch, 3 dc
+Row 3: 2 dc, 2 ch, 3 dc, 2 ch, 2 dc
+Row 4: 1 dc, 2 ch, 1 dc, 3 ch, 1 dc, 2 ch, 1 dc
+Row 5: 1 dc, 1 ch, 1 dc, 2 ch, 1 dc, 2 ch, 1 dc, 1 ch, 1 dc
+Row 6: 1 dc, 1 ch, 1 dc, 1 ch, 3 dc, 1 ch, 1 dc, 1 ch, 1 dc
+Row 7: 1 dc, 1 ch, 1 dc, 2 ch, 1 dc, 2 ch, 1 dc, 1 ch, 1 dc
+Row 8: 1 dc, 2 ch, 1 dc, 3 ch, 1 dc, 2 ch, 1 dc
+Row 9: 2 dc, 2 ch, 3 dc, 2 ch, 2 dc
+Row 10: 3 dc, 5 ch, 3 dc
+Row 11: 11 dc

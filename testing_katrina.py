@@ -2,15 +2,18 @@ import cellpylib as cpl
 import numpy as np
 
 # initialize a 60x60 2D cellular automaton
-cellular_automaton = cpl.init_simple2d(28, 28)
+cellular_automaton = cpl.init_simple2d(9, 9)
 
+timesteps= 30
 # evolve the cellular automaton for 30 time steps,
 #  applying totalistic rule 126 to each cell with a Moore neighbourhood
-cellular_automaton = cpl.evolve2d(cellular_automaton, timesteps=30, neighbourhood='von Neumann',
+cellular_automaton = cpl.evolve2d(cellular_automaton, timesteps=timesteps, neighbourhood='von Neumann',
                                   apply_rule=lambda n, c, t: cpl.totalistic_rule(n, k=2, rule=22))
 
 cpl.plot2d(cellular_automaton, show_grid = True)
-print(cellular_automaton[29])
+#print(cellular_automaton[29])
+print(cellular_automaton[timesteps-1])
+
 
 #von nueman 22
 #print(type(cellular_automaton))
@@ -20,9 +23,10 @@ print(cellular_automaton[29])
 ##### pattern generator #######
 
 # Count the zeros and ones to decide which should be holes in the lace (the one with fewer should be the lacey part)
+# Actually do the opposite of the above comment.
 num_zeros = 0
 num_ones = 0
-for row in cellular_automaton[29]:
+for row in cellular_automaton[timesteps-1]:
     for element in row:
         if element == 0:
             num_zeros += 1
@@ -32,13 +36,13 @@ for row in cellular_automaton[29]:
 # Using zeros as stitches and ones as holes
 if (num_zeros >= num_ones):
     print("more zeros")
-    stitch = 0
-    space = 1
+    stitch = 1
+    space = 0
 # Using ones as stitches and zeros as holes
 else: 
     print("more ones")
-    stitch = 1
-    space  = 0
+    stitch = 0
+    space  = 1
 
 def generate_lace_pattern(graph, stitch, space):
     # Pad all edges with stiches (i.e. we can't end or start a row with empty space, the last and first rows cannot have empty space either)
@@ -47,7 +51,7 @@ def generate_lace_pattern(graph, stitch, space):
     foundation_ch = str(len(pattern_graph[0]) + 2)
     foundation = "Foundation Row: ch " + foundation_ch
     # Map the 0's and 1's to actual crochet stitches (half double crochet and chain spaces)
-    stitch_map = {stitch: "hdc", space: "ch"}
+    stitch_map = {stitch: "dc", space: "ch"}
     # Go row by row, element by element, counting the number of stitches until it changes to the different stitch, then counting those.
     rows = []
     for i, row in enumerate(reversed(pattern_graph)):
@@ -144,13 +148,13 @@ with open('pattern.txt', 'r') as file:
             formatted_instructions = formatted_instructions.rstrip("\n")
             row_text = f"{row_number}: {formatted_instructions}"
             row_text = row_text.replace(', ', '', 1)
-            print(row_text)
+            #print(row_text)
             formatted_pattern.append(row_text)
 
 # Write the text to a file
 title = "Cellular Automata Crochet Pattern"
-stitch_defs = "Stitch definitions: hdc = half double crochet, ch = chain"
-note = "Note: Please note that the ch 2 and turn counts as the first hdc."
+stitch_defs = "Stitch definitions: dc = double crochet, ch = chain"
+note = "Note: Please note that the ch 3 and turn counts as the first dc."
 with open("complete_pattern.txt", "w") as file:
     file.write(title)
     file.write("\n")
@@ -163,8 +167,9 @@ with open("complete_pattern.txt", "w") as file:
             row += "."
             file.write(row)
         if i != 0:
-            row += ", ch 2 and turn."
+            row += ", ch 3 and turn."
             file.write(row)
+        file.write("\n")
 
           
 

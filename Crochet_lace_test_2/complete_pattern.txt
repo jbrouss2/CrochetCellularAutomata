@@ -1,0 +1,26 @@
+Cellular Automata Crochet Pattern
+Stitch definitions: dc = double crochet, ch = chain
+Note: Please note that the ch 3 and turn counts as the first dc.
+Foundation Row: ch 13.
+
+Row 1: 11 dc, ch 3 and turn.
+
+Row 2: 3 dc, 5 ch, 3 dc, ch 3 and turn.
+
+Row 3: 2 dc, 2 ch, 3 dc, 2 ch, 2 dc, ch 3 and turn.
+
+Row 4: 1 dc, 2 ch, 1 dc, 3 ch, 1 dc, 2 ch, 1 dc, ch 3 and turn.
+
+Row 5: 1 dc, 1 ch, (1 dc, 2 ch)*2, 1 dc, 1 ch, 1 dc, ch 3 and turn.
+
+Row 6: (1 dc, 1 ch)*2, 3 dc, 1 ch, 1 dc, 1 ch, 1 dc, ch 3 and turn.
+
+Row 7: 1 dc, 1 ch, (1 dc, 2 ch)*2, 1 dc, 1 ch, 1 dc, ch 3 and turn.
+
+Row 8: 1 dc, 2 ch, 1 dc, 3 ch, 1 dc, 2 ch, 1 dc, ch 3 and turn.
+
+Row 9: 2 dc, 2 ch, 3 dc, 2 ch, 2 dc, ch 3 and turn.
+
+Row 10: 3 dc, 5 ch, 3 dc, ch 3 and turn.
+
+Row 11: 11 dc, ch 3 and turn.
