@@ -7,7 +7,7 @@ from PIL import Image
 import os
 
 class PatternGenerator():
-    def __init__(self, size_block, number_of_blocks, size_pattern, neighbourhood, rule_number, timesteps, k_value):
+    def __init__(self, size_block, number_of_blocks, size_pattern, neighbourhood, rule_number, timesteps, k_value, lace_or_mosaic):
         self.size_block = size_block
         self.number_of_blocks = number_of_blocks
         self.size_pattern = size_pattern
@@ -15,6 +15,7 @@ class PatternGenerator():
         self.rule_number = rule_number
         self.timesteps = timesteps
         self.k_value = k_value
+        self.lace_or_mosaic = lace_or_mosaic
 
     # Compile the info to generate one sqaure
     def generate_square(self):
@@ -62,8 +63,12 @@ if __name__ == '__main__':
     parser.add_argument("--timesteps", "-t", required=False, type=int, help="Timesteps", default=30)
     parser.add_argument("--k_value", "-k", required=False, type=int, help="K value", default=2)
 
+    # Arguments for Lacey or Mosaic
+    parser.add_argument("--lace_or_mosaic", "-lm", required=False, type=int, help="0 for neither, 1 for lace, 2 for mosaic", default=0)
+
+
     args = parser.parse_args()
     print("Arguments:", args)
 
-    pattern = PatternGenerator(args.size_block, args.number_of_blocks, args.size_pattern, args.neighbourhood, args.rule_number, args.timesteps, args.k_value)
+    pattern = PatternGenerator(args.size_block, args.number_of_blocks, args.size_pattern, args.neighbourhood, args.rule_number, args.timesteps, args.k_value, args.lace_or_mosaic)
     pattern.generate_square()
