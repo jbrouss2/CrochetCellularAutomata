@@ -36,7 +36,7 @@ class PatternGenerator():
         pattern_block = cpl.evolve2d(pattern_block_size, timesteps=self.timesteps, neighbourhood=neighborhood,
                                             apply_rule=lambda n, c, t: cpl.totalistic_rule(n, k=self.k_value, rule=self.rule_number))
  
-        print(pattern_block[29])
+        # print(pattern_block[29])
         # cpl.plot2d(pattern_block, show_grid=True)
         grid = np.array(pattern_block[self.timesteps-1])
         plt.imshow(grid, cmap='binary', interpolation='nearest')
