@@ -1,64 +1,16 @@
-# import os
-# import numpy as np
-# import sys
-# import matplotlib.pyplot as plt
-# import argparse
-# import time
-
-# class PatternGenerator():
-#     def __init__ (self, num_experiments):
-#         self.num_experiments = num_experiments
-        
-
-#     def simulate(self):
-
-
-#         # Create the associated figure 
-#         fig = plt.figure()
-#         ax = plt.Axes(fig, [0., 0., 1., 1.])
-#         ax.set_axis_off() 
-#         fig.add_axes(ax)
-#         ax.imshow(self.palette[self.board.astype(int)]) 
-#         img_fn = self.exp_dir + "/experiment_" + str(experiment) + "_step_" + str(z) + ".png"
-#         plt.savefig(img_fn, dpi=800, bbox_inches="tight", pad_inches=0)
-#         plt.close(fig)
-
-#     if __name__ == '__main__':
-#         print ("Hello World!")
-#         parser = argparse.ArgumentParser(description="Crochet Cellular Automata")
-        
-#         # Determine the arguments we wish to have
-#         parser.add_argument("--")
-
-#         args = parser.parse_args()
-
-#         pattern = PatternGenerator(args.expereiments, args )
-#         pattern.simulate()
-
-# import cellpylib as cpl
-
-# # initialize a 60x60 2D cellular automaton
-# cellular_automaton = cpl.init_simple2d(60, 60)
-
-# # evolve the cellular automaton for 30 time steps,
-# #  applying totalistic rule 126 to each cell with a Moore neighbourhood
-# cellular_automaton = cpl.evolve2d(cellular_automaton, timesteps=30, neighbourhood='von Neumann',
-#                                   apply_rule=lambda n, c, t: cpl.totalistic_rule(n, k=2, rule=26))
-
-# cpl.plot2d(cellular_automaton, show_grid=True)
-
 import cellpylib as cpl
 import matplotlib.pyplot as plt
 import argparse
 import numpy as np
 import sys
-print(sys.path)
+from PIL import Image
+import os
 
-# evolve the cellular automaton for 30 time steps,
-#  applying totalistic rule 126 to each cell with a Moore neighbourhood
-# cellular_automaton = cpl.evolve2d(cellular_automaton, timesteps=30, neighbourhood='von Neumann',
-                                #   apply_rule=lambda n, c, t: cpl.totalistic_rule(n, k=2, rule=22))
-
+def custom_plot2d(array, show_grid=True):
+    plt.imshow(array, cmap='binary', origin='lower')
+    if show_grid:
+        plt.grid(color='black', linestyle='-', linewidth=0.5)
+    plt.axis('off')
 
 class PatternGenerator():
     def __init__(self, size_block, number_of_blocks, size_pattern, neighbourhood, rule_number):
@@ -69,12 +21,9 @@ class PatternGenerator():
         self.rule_number = rule_number
 
     # Compile the info to generate one sqaure
-    def create_square(self):
-        # Create a list to store them 
-        patterns_list = []
-
+    def generate_square(self):
         # initialize a 2D cellular automaton based off size block
-        cellular_automaton = cpl.init_simple2d(self.size_block, self.size_block)
+        pattern_block_size = cpl.init_simple2d(self.size_block, self.size_block)
 
         # Determine the neighborhood
         neighborhood = ""
@@ -86,19 +35,86 @@ class PatternGenerator():
             print("Error: Invalid neighbourhood")
             sys.exit(1)
 
-        print(neighborhood)
+        # print(neighborhood)
 
-        cellular_automaton = cpl.evolve2d(cellular_automaton, timesteps=30, neighbourhood=neighborhood,
-                                            apply_rule=lambda n, c, t: cpl.totalistic_rule(n, k=4, rule=self.rule_number))
+        pattern_block = cpl.evolve2d(pattern_block_size, timesteps=30, neighbourhood=neighborhood,
+                                            apply_rule=lambda n, c, t: cpl.totalistic_rule(n, k=2, rule=self.rule_number))
+ 
+        # cpl.plot2d(pattern_block, show_grid=True)
+        return pattern_block
+
+   
+    def compile_full_pattern(self):
+        patterns_list = []
+
+        # Generate square patterns
+        for _ in range(self.number_of_blocks):
+            square_pattern = self.generate_square()
+            patterns_list.append(square_pattern)
+
+        return patterns_list
+
+    def arrange_patterns(self, patterns_list):
+        fig, axs = plt.subplots(self.size_pattern[0], self.size_pattern[1], figsize=(10, 10))
+        for i, pattern in enumerate(patterns_list):
+            row = i // self.size_pattern[1]
+            col = i % self.size_pattern[1]
+            axs[row, col].imshow(pattern[0], cmap='binary')
+            axs[row, col].axis('off')
+        return fig
+
+    def save_pattern_images(self):
+        patterns_list = self.compile_full_pattern()
+        img_dir = "Images"
+        os.makedirs(img_dir, exist_ok=True)
+
+        for z, pattern in enumerate(patterns_list):  # Iterate over patterns
+            # Select the last slice of the pattern
+            last_slice = pattern[-1]
+            print(f"Last slice shape for pattern {z}: {last_slice.shape}")
+
+            # Create the associated figure
+            fig = plt.figure(figsize=(5, 5))  # Adjust figsize as needed
+            plt.imshow(last_slice, cmap='binary', interpolation='none')  # Plot the last slice
+            plt.axis('off')  # Turn off axis labels
+            img_fn = os.path.join(img_dir, f"experiment_{z}.png")
+            plt.savefig(img_fn, dpi=300, bbox_inches="tight", pad_inches=0)
+            plt.close(fig)
+
+    def combine_images(self):
+        img_dir = "Images"
+        image_files = [f"experiment_{i}.png" for i in range(self.number_of_blocks)]
+        print(image_files)
+
+        # Open the individual images and store them in a list
+        images = [Image.open(os.path.join(img_dir, img_file)) for img_file in image_files]
+        print(images)
+
+        # Create a new blank image with white background
+        combined_image = Image.new("RGB", (3 * self.size_block, 3 * self.size_block), "white")
+        print(combined_image)
+
+        # Paste each individual image into the combined image
+        for i, img_file in enumerate(image_files):
+            img_path = os.path.join(img_dir, img_file)
+            img = Image.open(img_path)
+            row = i // 2  # Determine the row index
+            col = i % 2   # Determine the column index
+            x_offset = col * self.size_block
+            y_offset = row * self.size_block
+            combined_image.paste(img, (x_offset, y_offset))
+
+            # Optionally, save the intermediate combined image for debugging
+            combined_image.save(os.path.join(img_dir, f"combined_image_debug_{i}.png"))
+
+        for i, img in enumerate(images):
+            img.show()
+
+        # Save the combined image
+        combined_image.save(os.path.join(img_dir, "combined_image.png"))
         
-        cpl.plot2d(cellular_automaton, show_grid=True)
-        
-    def create_full_pattern():
-        # Compile the squares into one full thing
-        print("hello")
 
 if __name__ == '__main__':
-    print("hello")
     parser = argparse.ArgumentParser(description="Crochet Cellular Automata")
 
     # Overall arguments
@@ -113,6 +129,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     print("Arguments:", args)
 
-
-    patterns = PatternGenerator(args.size_block, args.number_of_blocks, args.size_pattern, args.neighbourhood, args.rule_number)
-    patterns.create_square()  
+    pattern = PatternGenerator(args.size_block, args.number_of_blocks, args.size_pattern, args.neighbourhood, args.rule_number)
+    pattern.save_pattern_images()
+    pattern.combine_images()
