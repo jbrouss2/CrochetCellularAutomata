@@ -1,0 +1,16 @@
+Foundation Row: ch 32
+Row 1: 30 dc
+Row 2: 30 dc
+Row 3: 6 dc, 4 ch, 4 dc, 2 ch, 4 dc, 4 ch, 6 dc
+Row 4: 4 dc, 2 ch, 4 dc, 2 ch, 2 dc, 2 ch, 2 dc, 2 ch, 4 dc, 2 ch, 4 dc
+Row 5: 4 dc, 2 ch, 6 dc, 6 ch, 6 dc, 2 ch, 4 dc
+Row 6: 6 dc, 2 ch, 2 dc, 4 ch, 2 dc, 4 ch, 2 dc, 2 ch, 6 dc
+Row 7: 8 dc, 4 ch, 2 dc, 2 ch, 2 dc, 4 ch, 8 dc
+Row 8: 4 dc, 6 ch, 2 dc, 6 ch, 2 dc, 6 ch, 4 dc
+Row 9: 8 dc, 4 ch, 2 dc, 2 ch, 2 dc, 4 ch, 8 dc
+Row 10: 6 dc, 2 ch, 2 dc, 4 ch, 2 dc, 4 ch, 2 dc, 2 ch, 6 dc
+Row 11: 4 dc, 2 ch, 6 dc, 6 ch, 6 dc, 2 ch, 4 dc
+Row 12: 4 dc, 2 ch, 4 dc, 2 ch, 2 dc, 2 ch, 2 dc, 2 ch, 4 dc, 2 ch, 4 dc
+Row 13: 6 dc, 4 ch, 4 dc, 2 ch, 4 dc, 4 ch, 6 dc
+Row 14: 30 dc
+Row 15: 30 dc

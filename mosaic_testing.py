@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # initialize a 60x60 2D cellular automaton
-cellular_automaton = cpl.init_simple2d(9, 9)
+cellular_automaton = cpl.init_simple2d(13, 13)
 
 timesteps= 30
 # evolve the cellular automaton for 30 time steps,

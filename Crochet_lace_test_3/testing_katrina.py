@@ -2,13 +2,13 @@ import cellpylib as cpl
 import numpy as np
 
 # initialize a 60x60 2D cellular automaton
-cellular_automaton = cpl.init_simple2d(9, 9)
+cellular_automaton = cpl.init_simple2d(13, 13)
 
-timesteps= 30
+timesteps = 10
 # evolve the cellular automaton for 30 time steps,
 #  applying totalistic rule 126 to each cell with a Moore neighbourhood
 cellular_automaton = cpl.evolve2d(cellular_automaton, timesteps=timesteps, neighbourhood='von Neumann',
-                                  apply_rule=lambda n, c, t: cpl.totalistic_rule(n, k=2, rule=22))
+                                  apply_rule=lambda n, c, t: cpl.totalistic_rule(n, k=2, rule=77))
 
 cpl.plot2d(cellular_automaton, show_grid = True)
 #print(cellular_automaton[29])
@@ -24,6 +24,7 @@ print(cellular_automaton[timesteps-1])
 
 # Count the zeros and ones to decide which should be holes in the lace (the one with fewer should be the lacey part)
 # Actually do the opposite of the above comment.
+# Actually changing it back for testing.
 num_zeros = 0
 num_ones = 0
 for row in cellular_automaton[timesteps-1]:
@@ -36,19 +37,20 @@ for row in cellular_automaton[timesteps-1]:
 # Using zeros as stitches and ones as holes
 if (num_zeros >= num_ones):
     print("more zeros")
-    stitch = 1
-    space = 0
+    stitch = 0
+    space = 1
 # Using ones as stitches and zeros as holes
 else: 
     print("more ones")
-    stitch = 0
-    space  = 1
+    stitch = 1
+    space  = 0
 
 def generate_lace_pattern(graph, stitch, space):
     # Pad all edges with stiches (i.e. we can't end or start a row with empty space, the last and first rows cannot have empty space either)
     pattern_graph = np.pad(graph, ((1, 1), (1, 1)), mode='constant', constant_values=stitch)
     # First tell the user to make a foundation chain the length of pattern_graph + 2
-    foundation_ch = str(len(pattern_graph[0]) + 2)
+    found_ch = (len(pattern_graph[0]))*2 + 2
+    foundation_ch = str(found_ch)
     foundation = "Foundation Row: ch " + foundation_ch
     # Map the 0's and 1's to actual crochet stitches (half double crochet and chain spaces)
     stitch_map = {stitch: "dc", space: "ch"}
@@ -62,25 +64,25 @@ def generate_lace_pattern(graph, stitch, space):
         if i % 2 == 0:
             for stitch_i in reversed(row):
                 if stitch_i == current_stitch:
-                    current_count += 1
+                    current_count += 2
                 elif stitch_i != current_stitch and current_stitch == None:
                     current_stitch = stitch_i
-                    current_count += 1
+                    current_count += 2
                 elif stitch_i != current_stitch and current_stitch is not None:
                     row_text += f", {current_count} {stitch_map[current_stitch]}"
                     current_stitch = stitch_i
-                    current_count = 1
+                    current_count = 2
         else:
             for stitch_i in row:
                 if stitch_i == current_stitch:
-                    current_count += 1
+                    current_count += 2
                 elif stitch_i != current_stitch and current_stitch == None:
                     current_stitch = stitch_i
-                    current_count += 1
+                    current_count += 2
                 elif stitch_i != current_stitch and current_stitch is not None:
                     row_text += f", {current_count} {stitch_map[current_stitch]}"
                     current_stitch = stitch_i
-                    current_count = 1
+                    current_count = 2
         row_text += f", {current_count} {stitch_map[current_stitch]}"
         row_text = row_text.replace(', ', '', 1)
 
@@ -134,7 +136,7 @@ def reformat_line(line):
     return new_line
 
 
-graph = generate_lace_pattern(cellular_automaton[29], stitch, space)
+graph = generate_lace_pattern(cellular_automaton[timesteps-1], stitch, space)
 print(graph)
 
 
