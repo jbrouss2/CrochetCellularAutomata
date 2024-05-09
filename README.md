@@ -14,8 +14,10 @@ pip install matplotlib
 ## How to Use
 1. Download the repository
 2. Make sure you have the neccessary libraries install
-3. Run script by `python .\generate_1_square.py -r  [rule_number]
+3. Run script by using python .\generate_1_square.py -r  [rule_number]
+4. See the Cellular Automata generated
 
+### Script Options
 ```
 options:
   -h, --help            show this help message and exit
