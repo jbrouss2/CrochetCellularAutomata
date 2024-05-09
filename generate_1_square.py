@@ -51,7 +51,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Crochet Cellular Automata")
 
     # Overall arguments
-    parser.add_argument("--size_block", "-sb", required=False, type=int, nargs=2, help="Size of one block", default=(60,60))
+    parser.add_argument("--size_block", "-sb", required=False, type=int, nargs=2, help="Size of one block", default=(14,14))
 
     # Not in use anymore - no functionality
     parser.add_argument("--number_of_blocks", "-b", required=False, type=int, help="Number of blocks", default=1)
