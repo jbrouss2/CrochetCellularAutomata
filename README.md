@@ -38,3 +38,5 @@ options:
   --lace_or_mosaic LACE_OR_MOSAIC, -lm LACE_OR_MOSAIC
                         0 for neither, 1 for lace, 2 for mosaic
 ```
+#### Note: Use lace_pattern_generator.py to get written instructions
+We will move this into the main script soon!
